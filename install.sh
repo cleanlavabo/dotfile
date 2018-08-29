@@ -14,16 +14,19 @@ brew install rbenv
 rbenv init
 
 # get all versions of ruby
+# Ruby version at the time updated this file is 2.5.1
 rbenv install -list
 
 # select the version ruby_version
 # take a look at the completely stable version at
 # https://www.ruby-lang.org/en/downloads/
-rbenv install ruby_version
+# rbenv install ruby_version
+rbenv install 2.5.1
 
 # delect ruby as global or local user
-rbenv global ruby_version
-rbenv global ruby_version
+# rbenv global ruby_version
+# rbenv local ruby_version
+rbenv global 2.5.1
 
 # double check again...
 rbenv versions
