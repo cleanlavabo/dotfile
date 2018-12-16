@@ -41,6 +41,63 @@ gem install rsense
 # Double check all installed gems
 rbenv rehash
 
+# install zsh and oh-my-zsh
+brew install git
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
+brew install zsh zsh-completions
+# change shell to zsh
+chsh -s /bin/zsh
+# download nerd font
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+
+echo "Warning: Init font before customize theme of iterm2"
+echo "Iterm2 -> Preferences -> Profiles -> Text -> Font -> Change Font"
+echo "Font name: Hack Regular Nerd Font Complete"
+
+echo "POWERLEVEL9K_MODE='nerdfont-complete'" >> ~/.zshrc
+git clone "https://github.com/bhilburn/powerlevel9k.git" ~/powerlevel9k
+echo 'source  ~/powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
+echo "POWERLEVEL9K_MODE='awesome-patched'
+
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+
+# Elementos de la barra
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv virtualenv vi_mode)
+POWERLEVEL9K_STATUS_VERBOSE=false
+
+POWERLEVEL9K_DIR_HOME_BACKGROUND='09'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='09'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='009'
+POWERLEVEL9K_DIR_HOME_FOREGROUND='236'
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='236'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='236'
+
+# git hub colors
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='236'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='119'
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='236'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='214'
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='236'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='196'
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='236'
+
+# Quitar iconos del inicio
+POWERLEVEL9K_HOME_ICON=''
+POWERLEVEL9K_HOME_SUB_ICON=''
+POWERLEVEL9K_FOLDER_ICON=''
+
+# Vi-Mode
+POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND='005'
+POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND='236'
+POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND='245'
+POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND='236'" >> ~/.zshrc
+
 ###+--------------+###
 ###|     APPS     |###
 ###+--------------+###
@@ -48,13 +105,25 @@ brew cask install visual-studio-code
 brew cask install slack
 brew cask install spotify
 brew cask install github
-brew install zsh
-brew install zsh-syntax-highlighting
-brew install zsh-autosuggestions
-brew install heroku
+brew cask install skype
+brew cask install iterm2
+brew cask install google-chrome
+brew cask install sublime-text
+brew cask install fork
+brew cask install atom
+brew install heroku/brew/heroku
+brew install python
+brew cask install docker
+brew cask install macdown
+brew cask install postman
+brew cask install virtualbox
+brew cask install the-unarchiver
+brew cask install wkhtmltopdf
+brew install wifi-password                                                                                                                                                              INSERT
+brew install nvm
 
-###+--------------+###
-###|   CUSTOMIZE  |###
-###+--------------+###
-# https://medium.com/the-code-review/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
-# cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+# Android
+brew cask install java
+brew cask install jd-gui
+brew cask install android-studio
+brew install apktool
