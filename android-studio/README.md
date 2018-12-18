@@ -5,6 +5,15 @@ Monokai Theme for Android Studio 1.5+
 
 ## Installation
 
+#### Android studio plugin
+1. Open the Settings/Preferences dialog (OSX/Unix: ⌘+,, Windows: Ctrl+Alt+S)
+2. In the left-hand pane, select Plugins.
+3. Click Browse repositories… and search for `Material Theme UI`
+4. Click Install plugin and confirm your intention to download and install the plugin.
+5. Click OK in the Settings dialog and restart for the changes to take effect.
+
+
+#### Color scheme
 1. Download the `Monokai_Android.jar` or clone this repository.
 2. In Android Studio choose `File > Import Settings ...`
 
