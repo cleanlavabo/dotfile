@@ -121,6 +121,8 @@ brew cask install the-unarchiver
 brew cask install wkhtmltopdf
 brew install wifi-password                                                                                                                                                              INSERT
 brew install nvm
+brew cask install guitar-pro
+brew install youtube-dl
 
 # Android
 brew cask install java
