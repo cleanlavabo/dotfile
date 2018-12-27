@@ -119,10 +119,12 @@ brew cask install postman
 brew cask install virtualbox
 brew cask install the-unarchiver
 brew cask install wkhtmltopdf
+brew cask install guitar-pro
+brew cask install skitch
 brew install wifi-password                                                                                                                                                              INSERT
 brew install nvm
-brew cask install guitar-pro
 brew install youtube-dl
+
 
 # Android
 brew cask install java
