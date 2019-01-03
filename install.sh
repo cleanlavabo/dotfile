@@ -122,6 +122,7 @@ brew cask install wkhtmltopdf
 brew cask install guitar-pro
 brew cask install skitch
 brew cask install discord
+brew cask install zeplin
 brew cask install rubymine
 brew install wifi-password                                                                                                                                                              INSERT
 brew install nvm
