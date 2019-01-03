@@ -119,6 +119,7 @@ brew cask install postman
 brew cask install virtualbox
 brew cask install the-unarchiver
 brew cask install wkhtmltopdf
+brew cask install teamviewer
 brew cask install guitar-pro
 brew cask install skitch
 brew cask install discord
