@@ -32,11 +32,11 @@ rbenv global 2.5.1
 rbenv versions
 
 # install important gems
-gem install bundler
-gem install rails
+gem install bundler --user-install
+gem install rails --user-install
 
 # ruby auto-completion
-gem install rsense
+gem install rsense --user-install
 
 # Double check all installed gems
 rbenv rehash
@@ -125,9 +125,10 @@ brew cask install skitch
 brew cask install discord
 brew cask install zeplin
 brew cask install rubymine
-brew install wifi-password                                                                                                                                                              INSERT
+brew install wifi-password
 brew install nvm
 brew install youtube-dl
+brew install tmux
 
 
 # Android
