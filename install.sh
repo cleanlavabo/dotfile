@@ -129,6 +129,7 @@ brew cask install zeplin
 brew cask install rubymine
 brew install wifi-password
 brew install nvm
+brew install the_silver_searcher
 brew install youtube-dl
 brew install tmux
 
