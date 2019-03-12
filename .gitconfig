@@ -104,6 +104,9 @@
 	crazy = status
 	stupid = status
 
+    # git log one line with graph
+    dog = !git log --all --decorate --oneline --graph
+
 [color]
 	ui = auto
 
@@ -119,5 +122,3 @@
 
 [help]
 	autocorrect = 1
-
-	gdog = git log --all --decorate --oneline --graph
