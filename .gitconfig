@@ -1,6 +1,6 @@
 [alias]
 	# short aliases
-	st = status 
+	st = status
 	co = checkout
 	ci = commit
 	br = branch
@@ -65,7 +65,7 @@
 
 	# `git spawn my-new-branch`
 	# make new branch based on master no matter which branch is checked out
-	spawn = !sh -c 'git checkout -b $1 ${2-master} && git config branch.$1.localmerge ${2-master}' - 
+	spawn = !sh -c 'git checkout -b $1 ${2-master} && git config branch.$1.localmerge ${2-master}' -
 
 	# `git nuke my-old-branch`
 	# (Checks out master and does a non-forced delete on the branch entered)
@@ -76,7 +76,7 @@
 	sync = !git update && \
 		git co master && \
 		git pull && \
-		git co @{-1} 
+		git co @{-1}
 
 	# `git save`
 	# saves a commit in current branch: local branches you will be rebasing
@@ -94,7 +94,7 @@
 	# give a count of dirty files
 	dirty = !git status --porcelain -uno | wc -l
 
-	# number of non-merge commits 
+	# number of non-merge commits
 	peeps = !git log --pretty=format:"%Cblue%aN%Creset" --no-merges | sort | uniq -c | sort -rn
 	mergers = !git log --pretty=format:"%Cred%aN%Creset" --merges | sort | uniq -c | sort -rn
 
@@ -119,3 +119,5 @@
 
 [help]
 	autocorrect = 1
+
+	gdog = git log --all --decorate --oneline --graph
