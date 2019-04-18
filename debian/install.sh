@@ -55,3 +55,15 @@ apt update
 yes Y | apt install build-essential patch ruby-dev zlib1g-dev liblzma-dev
 gem install nokogiri
 yes Y | apt install libgmp-dev
+
+apt update
+yes Y | apt install nginx
+
+apt update
+yes Y | install certbot python-certbot-nginx
+
+apt update
+yes Y | apt install curl
+
+curl -sL https://deb.nodesource.com/setup_11.x | bash -
+yes Y | apt install -y nodejs
