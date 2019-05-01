@@ -41,8 +41,8 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
-RUBY_CONFIGURE_OPTS=--disable-install-doc rbenv install --verbose 2.6.0
-rbenv global 2.6.0
+RUBY_CONFIGURE_OPTS=--disable-install-doc rbenv install --verbose 2.6.3
+rbenv global 2.6.3
 ruby -v
 
 ### POTGRES DB
