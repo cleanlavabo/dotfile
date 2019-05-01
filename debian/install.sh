@@ -67,3 +67,6 @@ yes Y | apt install curl
 
 curl -sL https://deb.nodesource.com/setup_11.x | bash -
 yes Y | apt install -y nodejs
+
+apt update
+yes Y | apt install yarn
