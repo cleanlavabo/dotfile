@@ -70,3 +70,5 @@ yes Y | apt install -y nodejs
 
 apt update
 yes Y | apt install yarn
+
+yes Y | install certbot python-certbot-nginx -t stretch-backports
