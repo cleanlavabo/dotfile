@@ -1,0 +1,16 @@
+Edit
+
+/lib/systemd/system/bluetooth.service
+
+and change
+
+ExecStart=/usr/lib/bluetooth/bluetoothd
+
+to
+
+ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=avrcp
+
+and run
+
+sudo systemctl daemon-reload
+sudo systemctl restart bluetooth
