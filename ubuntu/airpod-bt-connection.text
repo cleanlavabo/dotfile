@@ -1,0 +1,3 @@
+Set ControllerMode = bredr in /etc/bluetooth/main.conf
+sudo /etc/init.d/bluetooth restart
+Try to pair again.
