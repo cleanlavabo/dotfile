@@ -1,0 +1,21 @@
+Answering my own question if anyone else stumbles upon this.
+
+So, I realized that the Webpack config from create-react-app@3.0.1 ejection had code split configurations enabled. Which was splitting react library code from my code making it inexecutable.
+
+Here are the settings I changed in the webpack config to get it working. (note that this is only advisable to do when developing chrome extension)
+
+In webpack.config.js remove the configuration for splitChunks under optimization node, and set runtimeChunk to false.
+
+...
+optimization: {
+  .
+  .
+  // remove spitChunks config
+  splitChunks: {
+     chunks: 'all',
+     name: false,
+  },
+  runtimeChunk: true, // set this to false
+}
+...
+the generated bundle will now be named as content.js (considering content as the entry point) link this content.js in your manifest.json under content_scripts and you're good to go.
